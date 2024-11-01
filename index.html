@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบยืมคอมพิวเตอร์</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .button {
+            background-color: #4285f4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ระบบยืมคอมพิวเตอร์</h1>
+        <p>โปรดกรอกข้อมูลการยืมคอมพิวเตอร์ผ่านฟอร์มด้านล่าง</p>
+        <button class="button" onclick="openForm()">กรอกฟอร์มยืม/ส่งคืนคอมพิวเตอร์</button>
+
+        <h2>เช็คสถานะการคืน</h2>
+        <p>ตรวจสอบสถานะการคืนอุปกรณ์ของคุณผ่าน Google Sheets</p>
+        <button class="button" onclick="checkStatus()">เช็คสถานะการคืน</button>
+    </div>
+
+    <script>
+        function openForm() {
+            // ใส่ลิงก์ Google Form ของคุณ
+            window.open("https://forms.gle/edR2f66gEsRMNStg9");
+        }
+
+        function checkStatus() {
+            // ใส่ลิงก์ Google Sheets ที่ตั้งให้เป็นแบบดูได้อย่างเดียว
+            window.open("https://docs.google.com/spreadsheets/d/1Skh5CyYkJ_8MtKEg85tIQbPvOoFcF9v8YZM1r220e00/edit?usp=sharing", "_blank");
+        }
+    </script>
+</body>
+</html>
